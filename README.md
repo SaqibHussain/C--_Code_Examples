@@ -9,3 +9,4 @@ The code demonstrates the use of:
 - Overloading operators and methods
 - Templates
 - Comprehensive documentation using doxygen
+ - Complex numbers & operations on them
