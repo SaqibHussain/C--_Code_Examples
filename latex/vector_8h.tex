@@ -1,0 +1,116 @@
+\hypertarget{vector_8h}{\section{vector.\-h File Reference}
+\label{vector_8h}\index{vector.\-h@{vector.\-h}}
+}
+
+
+\hyperlink{class_matrix}{Matrix} template class definition \& implementation.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_vector}{Vector$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Redefinition of the vector class to work with Templates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::istream \& \hyperlink{vector_8h_a5c27cb7e40c60f7addda5657b30bef12}{operator$>$$>$} (std\-::istream \&is, \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::ifstream \& \hyperlink{vector_8h_a7aea234351d97864016f87a4120f6893}{operator$>$$>$} (std\-::ifstream \&ifs, \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::ostream \& \hyperlink{vector_8h_afbee8685eba8033e340917640a7909d8}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::ofstream \& \hyperlink{vector_8h_a621c397da351e443c1020ceba056d743}{operator$<$$<$} (std\-::ofstream \&ofs, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_matrix}{Matrix} template class definition \& implementation. \hyperlink{class_vector}{Vector} template class definition and implementation.
+
+\begin{DoxyAuthor}{Author}
+Saqib Hussain S194491 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+01/12/2013 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Saqib Hussain 2013 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\hypertarget{vector_8h_afbee8685eba8033e340917640a7909d8}{\index{vector.\-h@{vector.\-h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector.h@{vector.\-h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_afbee8685eba8033e340917640a7909d8}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ Output Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output Stream 
+\end{DoxyReturn}
+\hypertarget{vector_8h_a621c397da351e443c1020ceba056d743}{\index{vector.\-h@{vector.\-h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector.h@{vector.\-h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{ofs, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_a621c397da351e443c1020ceba056d743}
+
+\begin{DoxyParams}{Parameters}
+{\em ofs} & -\/ Output File Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output File Stream 
+\end{DoxyReturn}
+\hypertarget{vector_8h_a5c27cb7e40c60f7addda5657b30bef12}{\index{vector.\-h@{vector.\-h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!vector.h@{vector.\-h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{is, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_a5c27cb7e40c60f7addda5657b30bef12}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & -\/ Input Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input Stream 
+\end{DoxyReturn}
+\hypertarget{vector_8h_a7aea234351d97864016f87a4120f6893}{\index{vector.\-h@{vector.\-h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!vector.h@{vector.\-h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::ifstream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{ifs, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{vector_8h_a7aea234351d97864016f87a4120f6893}
+
+\begin{DoxyParams}{Parameters}
+{\em ifs} & -\/ Input File Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input File Stream 
+\end{DoxyReturn}

@@ -1,0 +1,299 @@
+\hypertarget{class_vector}{\section{Vector$<$ T $>$ Class Template Reference}
+\label{class_vector}\index{Vector$<$ T $>$@{Vector$<$ T $>$}}
+}
+
+
+Redefinition of the vector class to work with Templates.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vector_a39d6069675db4ecfc1ab81d440da759a}{\hyperlink{class_vector_a39d6069675db4ecfc1ab81d440da759a}{Vector} ()}\label{class_vector_a39d6069675db4ecfc1ab81d440da759a}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor Constructs an empty \hyperlink{class_vector}{Vector}. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_a5eafc5059eab851fa32ab28dd54c1b4b}{Vector} (int Num)
+\begin{DoxyCompactList}\small\item\em Alternate Constructor it is explicit since implicit type conversion int -\/$>$ vector doesn't make sense. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_aa1671acb623cf2259dd60cf81db4f56a}{Vector} (const \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Copy Constructor Constructs a copy of another given vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector_afd524fac19e6d3d69db5198ffe2952b0}{virtual \hyperlink{class_vector_afd524fac19e6d3d69db5198ffe2952b0}{$\sim$\-Vector} ()}\label{class_vector_afd524fac19e6d3d69db5198ffe2952b0}
+
+\begin{DoxyCompactList}\small\item\em Destructor Destructor is virtual since it is a good thing to have virtual destr. in base class. \end{DoxyCompactList}\item 
+int \hyperlink{class_vector_a18605418864723aa92c05bf69b146cc0}{size} () const 
+\begin{DoxyCompactList}\small\item\em Accessor. \end{DoxyCompactList}\item 
+\hyperlink{class_vector}{Vector}$<$ T $>$ \& \hyperlink{class_vector_a8c9731bbac936dea6af37aec6cd8425f}{operator=} (const \hyperlink{class_vector}{Vector} \&v)
+\begin{DoxyCompactList}\small\item\em Overloaded assignment operator. \end{DoxyCompactList}\item 
+T \& \hyperlink{class_vector_ada36811f9a98443820d1ebea0e36a429}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Overloaded Array Access Operator for Writing. \end{DoxyCompactList}\item 
+T \hyperlink{class_vector_a48fceb9501ec9d624970a5e8c4190859}{operator\mbox{[}$\,$\mbox{]}} (int i) const 
+\begin{DoxyCompactList}\small\item\em Overloaded Array Access Operator for Reading. \end{DoxyCompactList}\item 
+bool \hyperlink{class_vector_ad422451181e74e97da2db1d30982064b}{operator==} (const \hyperlink{class_vector}{Vector} \&v) const 
+\begin{DoxyCompactList}\small\item\em Overloaded Comparison Operator Returns true or false depending on whether or not the \hyperlink{class_vector}{Vector} passed as an argument is equal to vector upon which the method was called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_vector_a114f401deb94c24ec98f6a85034cf369}{Init} (int Num)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_vector_ab22f5c6b6b9110d18705354e62a8e0e6}{num}
+\item 
+T $\ast$ \hyperlink{class_vector_a2eb967804ab083f77c2a8238cc060498}{pdata}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\istream \& \hyperlink{class_vector_a40dfb1e5107cd90a2c58148c04a93a31}{operator$>$$>$} (std\-::istream \&is, \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for Keyboard Input Overloaded operator for inputting a vector from keyboard. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\ostream \& \hyperlink{class_vector_a9652526bb52b8da281d59cc3b24a6f4f}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for Screen Output Overloaded operator for outputting a vector to screen. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\ifstream \& \hyperlink{class_vector_a8922a7c744791b0022a7c0b8f35e9643}{operator$>$$>$} (std\-::ifstream \&ifs, \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for File Input Overloaded operator for inputting a vector from file. Compatible with file output operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\ofstream \& \hyperlink{class_vector_a8f5c4cd0623b497b39f9cc1c5fa904f3}{operator$<$$<$} (std\-::ofstream \&ofs, const \hyperlink{class_vector}{Vector}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for File Output Overloaded operator for outputting a vector to file. Compatible with file input operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Vector$<$ T $>$}
+
+Redefinition of the vector class to work with Templates. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vector_a5eafc5059eab851fa32ab28dd54c1b4b}{\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection[{Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$\-::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{int}]{Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_vector_a5eafc5059eab851fa32ab28dd54c1b4b}
+
+
+Alternate Constructor it is explicit since implicit type conversion int -\/$>$ vector doesn't make sense. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Num} & -\/ Size of \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector_aa1671acb623cf2259dd60cf81db4f56a}{\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection[{Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Vector}$<$ T $>$\-::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_vector_aa1671acb623cf2259dd60cf81db4f56a}
+
+
+Copy Constructor Constructs a copy of another given vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ Reference to another \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vector_a114f401deb94c24ec98f6a85034cf369}{\index{Vector@{Vector}!Init@{Init}}
+\index{Init@{Init}!Vector@{Vector}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Vector}$<$ T $>$\-::Init (
+\begin{DoxyParamCaption}
+\item[{int}]{Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_vector_a114f401deb94c24ec98f6a85034cf369}
+private function since user should not call it \hypertarget{class_vector_a8c9731bbac936dea6af37aec6cd8425f}{\index{Vector@{Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector@{Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Vector}$<$ T $>$ \& {\bf Vector}$<$ T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_vector_a8c9731bbac936dea6af37aec6cd8425f}
+
+
+Overloaded assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector} after assignation is complete 
+\end{DoxyReturn}
+\hypertarget{class_vector_ad422451181e74e97da2db1d30982064b}{\index{Vector@{Vector}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector@{Vector}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf Vector}$<$ T $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_ad422451181e74e97da2db1d30982064b}
+
+
+Overloaded Comparison Operator Returns true or false depending on whether or not the \hyperlink{class_vector}{Vector} passed as an argument is equal to vector upon which the method was called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+\hypertarget{class_vector_ada36811f9a98443820d1ebea0e36a429}{\index{Vector@{Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T \& {\bf Vector}$<$ T $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_vector_ada36811f9a98443820d1ebea0e36a429}
+
+
+Overloaded Array Access Operator for Writing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ Int -\/ Position of element in vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to \hyperlink{class_vector}{Vector} element pdata 
+\end{DoxyReturn}
+\hypertarget{class_vector_a48fceb9501ec9d624970a5e8c4190859}{\index{Vector@{Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Vector}$<$ T $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_a48fceb9501ec9d624970a5e8c4190859}
+
+
+Overloaded Array Access Operator for Reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector} element pdata 
+\end{DoxyReturn}
+\hypertarget{class_vector_a18605418864723aa92c05bf69b146cc0}{\index{Vector@{Vector}!size@{size}}
+\index{size@{size}!Vector@{Vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int {\bf Vector}$<$ T $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vector_a18605418864723aa92c05bf69b146cc0}
+
+
+Accessor. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ nummber of elements inside vector 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_vector_a9652526bb52b8da281d59cc3b24a6f4f}{\index{Vector@{Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector@{Vector}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vector_a9652526bb52b8da281d59cc3b24a6f4f}
+
+
+Overloaded operator for Screen Output Overloaded operator for outputting a vector to screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ Output Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output Stream 
+\end{DoxyReturn}
+\hypertarget{class_vector_a8f5c4cd0623b497b39f9cc1c5fa904f3}{\index{Vector@{Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector@{Vector}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{ofs, }
+\item[{const {\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vector_a8f5c4cd0623b497b39f9cc1c5fa904f3}
+
+
+Overloaded operator for File Output Overloaded operator for outputting a vector to file. Compatible with file input operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ofs} & -\/ Output File Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output File Stream 
+\end{DoxyReturn}
+\hypertarget{class_vector_a40dfb1e5107cd90a2c58148c04a93a31}{\index{Vector@{Vector}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Vector@{Vector}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{is, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vector_a40dfb1e5107cd90a2c58148c04a93a31}
+
+
+Overloaded operator for Keyboard Input Overloaded operator for inputting a vector from keyboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & -\/ Input Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input Stream 
+\end{DoxyReturn}
+\hypertarget{class_vector_a8922a7c744791b0022a7c0b8f35e9643}{\index{Vector@{Vector}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Vector@{Vector}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$typename T $>$ ifstream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ifstream \&}]{ifs, }
+\item[{{\bf Vector}$<$ T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_vector_a8922a7c744791b0022a7c0b8f35e9643}
+
+
+Overloaded operator for File Input Overloaded operator for inputting a vector from file. Compatible with file output operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ifs} & -\/ Input File Stream \\
+\hline
+{\em v} & -\/ \hyperlink{class_vector}{Vector} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input File Stream 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_vector_ab22f5c6b6b9110d18705354e62a8e0e6}{\index{Vector@{Vector}!num@{num}}
+\index{num@{num}!Vector@{Vector}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Vector}$<$ T $>$\-::num\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_vector_ab22f5c6b6b9110d18705354e62a8e0e6}
+Number of elements \hypertarget{class_vector_a2eb967804ab083f77c2a8238cc060498}{\index{Vector@{Vector}!pdata@{pdata}}
+\index{pdata@{pdata}!Vector@{Vector}}
+\subsubsection[{pdata}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf Vector}$<$ T $>$\-::pdata\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_vector_a2eb967804ab083f77c2a8238cc060498}
+Pointer to the data 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector_8h}{vector.\-h}\end{DoxyCompactItemize}

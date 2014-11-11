@@ -1,0 +1,331 @@
+\hypertarget{class_math_matrix}{\section{Math\-Matrix Class Reference}
+\label{class_math_matrix}\index{Math\-Matrix@{Math\-Matrix}}
+}
+
+
+Mathmatrix class inherits the \hyperlink{class_matrix}{Matrix} Template class using doubles.  
+
+
+
+
+{\ttfamily \#include $<$Math\-Matrix.\-h$>$}
+
+
+
+Inherits \hyperlink{class_matrix}{Matrix$<$ double $>$}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_math_matrix_a7a05acdde6c68c2816abf2437b2241bc}{\hyperlink{class_math_matrix_a7a05acdde6c68c2816abf2437b2241bc}{Math\-Matrix} ()}\label{class_math_matrix_a7a05acdde6c68c2816abf2437b2241bc}
+
+\begin{DoxyCompactList}\small\item\em default constructor Construct an empty matrix \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix_a1f79dbe6088d6392fbf62110166d4222}{Math\-Matrix} (int n)
+\begin{DoxyCompactList}\small\item\em alternate constructor Construct a matrix of the given size \end{DoxyCompactList}\item 
+int \hyperlink{class_math_matrix_a8c35ac25975c9925d220792ca55a6778}{get\-\_\-size} () const 
+\begin{DoxyCompactList}\small\item\em Accessor Method to return matrix size Return the size of the square matrix. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_matrix_a55143b6ee71b6d2a568ffeb99c4f0d9b}{one\-\_\-norm} () const 
+\begin{DoxyCompactList}\small\item\em Method to calculate L1 Norm Calculate and return the l1 norm of the matrix the method is called on. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_matrix_a28bcb4dd7a3a90f9c5111b2c826b2266}{two\-\_\-norm} () const 
+\begin{DoxyCompactList}\small\item\em Method to Calculate L2 Norm Calculate and return the l2 norm of the matrix the method is called on. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_matrix_acc7fa38ce97cd0f96587566d283532d7}{uniform\-\_\-norm} () const 
+\begin{DoxyCompactList}\small\item\em Method to Calculate L2 Norm Calculate and return the uniform norm of the matrix the method is called on. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_a6bdb0416ce373dd534b83c2c26bb4480}{operator$\ast$} (const \hyperlink{class_math_matrix}{Math\-Matrix} \&a) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator for \hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix}{Math\-Matrix} multiplication Overloaded operator for multiplying the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on by the one passed as a parameter. \end{DoxyCompactList}\item 
+\hyperlink{class_math_vector}{Math\-Vector} \hyperlink{class_math_matrix_a718529b1f5441bbc7282212d6a2cdb5e}{operator$\ast$} (const \hyperlink{class_math_vector}{Math\-Vector} \&\hyperlink{class_matrix_a7b1d6b09f3f6fff47c03f63a51a93cd7}{v}) const 
+\begin{DoxyCompactList}\small\item\em Overloaded operator for \hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_vector}{Math\-Vector} Multiplication Overloaded operator for multiplying the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on by the \hyperlink{class_math_vector}{Math\-Vector} object passed as a parameter. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_a20fb58fbbdd549999e4d819f7747b1fb}{compute\-\_\-lower} () const 
+\begin{DoxyCompactList}\small\item\em Method to computer lower triangular form in L\-U Factorisation Returns a \hyperlink{class_math_matrix}{Math\-Matrix} with the lower triangluar form of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_ab1a5c4eb839e9abce390b10f9cd6bee6}{compute\-\_\-upper} () const 
+\begin{DoxyCompactList}\small\item\em Method to computer upper triangular form in L\-U Factorisation Returns a \hyperlink{class_math_matrix}{Math\-Matrix} with the upper triangluar form of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_a6cd7edf3565c9c278841ceeb0f8cd492}{inverse} () const 
+\begin{DoxyCompactList}\small\item\em Method to compute the inverse matrix Computes the inverse of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_matrix_a0e0797f57fd4b35b48c16fddf101120a}{condition\-\_\-num} () const 
+\begin{DoxyCompactList}\small\item\em Method to compute the condition number Computes the condition number of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_matrix_aa3c89c50387c203071eabb163988134b}{det} () const 
+\begin{DoxyCompactList}\small\item\em Method to compute the determinant Calculates the determinant of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_a3f4fdf320195fc4430c0ef0a691f359e}{forward\-Inv} () const 
+\begin{DoxyCompactList}\small\item\em Method to perform forward substiution Performs forward substituition on the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\item 
+\hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix_abfbc51f66f76a0e8911df1b591cd0671}{backward\-Inv} () const 
+\begin{DoxyCompactList}\small\item\em Method to perform backward substiution Performs backward substituition on the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_math_matrix_aa013e49a4df486235470800a07e2674d}{reorder} (const \hyperlink{class_math_matrix}{Math\-Matrix} \&a, int n, \hyperlink{class_math_matrix}{Math\-Matrix} \&p)
+\begin{DoxyCompactList}\small\item\em Method to compute the Permutation \hyperlink{class_matrix}{Matrix} Produces the Permutation \hyperlink{class_math_matrix}{Math\-Matrix} object P using the \hyperlink{class_math_matrix}{Math\-Matrix} object A passed as a parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::istream \& \hyperlink{class_math_matrix_a29e581a152659ab342ef9ce29f50905e}{operator$>$$>$} (std\-::istream \&is, \hyperlink{class_math_matrix}{Math\-Matrix} \&m)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for Keyboard Input Overloaded operator for inputting a \hyperlink{class_matrix}{Matrix} from keyboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Mathmatrix class inherits the \hyperlink{class_matrix}{Matrix} Template class using doubles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_math_matrix_a1f79dbe6088d6392fbf62110166d4222}{\index{Math\-Matrix@{Math\-Matrix}!Math\-Matrix@{Math\-Matrix}}
+\index{Math\-Matrix@{Math\-Matrix}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{Math\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Math\-Matrix\-::\-Math\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_math_matrix_a1f79dbe6088d6392fbf62110166d4222}
+
+
+alternate constructor Construct a matrix of the given size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ Size of square matrix \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_math_matrix_abfbc51f66f76a0e8911df1b591cd0671}{\index{Math\-Matrix@{Math\-Matrix}!backward\-Inv@{backward\-Inv}}
+\index{backward\-Inv@{backward\-Inv}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{backward\-Inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::backward\-Inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_abfbc51f66f76a0e8911df1b591cd0671}
+
+
+Method to perform backward substiution Performs backward substituition on the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a20fb58fbbdd549999e4d819f7747b1fb}{\index{Math\-Matrix@{Math\-Matrix}!compute\-\_\-lower@{compute\-\_\-lower}}
+\index{compute\-\_\-lower@{compute\-\_\-lower}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{compute\-\_\-lower}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::compute\-\_\-lower (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a20fb58fbbdd549999e4d819f7747b1fb}
+
+
+Method to computer lower triangular form in L\-U Factorisation Returns a \hyperlink{class_math_matrix}{Math\-Matrix} with the lower triangluar form of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_ab1a5c4eb839e9abce390b10f9cd6bee6}{\index{Math\-Matrix@{Math\-Matrix}!compute\-\_\-upper@{compute\-\_\-upper}}
+\index{compute\-\_\-upper@{compute\-\_\-upper}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{compute\-\_\-upper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::compute\-\_\-upper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_ab1a5c4eb839e9abce390b10f9cd6bee6}
+
+
+Method to computer upper triangular form in L\-U Factorisation Returns a \hyperlink{class_math_matrix}{Math\-Matrix} with the upper triangluar form of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a0e0797f57fd4b35b48c16fddf101120a}{\index{Math\-Matrix@{Math\-Matrix}!condition\-\_\-num@{condition\-\_\-num}}
+\index{condition\-\_\-num@{condition\-\_\-num}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{condition\-\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}double Math\-Matrix\-::condition\-\_\-num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a0e0797f57fd4b35b48c16fddf101120a}
+
+
+Method to compute the condition number Computes the condition number of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+double -\/ Condition Number 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_aa3c89c50387c203071eabb163988134b}{\index{Math\-Matrix@{Math\-Matrix}!det@{det}}
+\index{det@{det}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{det}]{\setlength{\rightskip}{0pt plus 5cm}double Math\-Matrix\-::det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_aa3c89c50387c203071eabb163988134b}
+
+
+Method to compute the determinant Calculates the determinant of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+double -\/ Determinant 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a3f4fdf320195fc4430c0ef0a691f359e}{\index{Math\-Matrix@{Math\-Matrix}!forward\-Inv@{forward\-Inv}}
+\index{forward\-Inv@{forward\-Inv}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{forward\-Inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::forward\-Inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a3f4fdf320195fc4430c0ef0a691f359e}
+
+
+Method to perform forward substiution Performs forward substituition on the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a8c35ac25975c9925d220792ca55a6778}{\index{Math\-Matrix@{Math\-Matrix}!get\-\_\-size@{get\-\_\-size}}
+\index{get\-\_\-size@{get\-\_\-size}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{get\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int Math\-Matrix\-::get\-\_\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a8c35ac25975c9925d220792ca55a6778}
+
+
+Accessor Method to return matrix size Return the size of the square matrix. 
+
+\begin{DoxyReturn}{Returns}
+Int -\/ \hyperlink{class_matrix}{Matrix} Size 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a6cd7edf3565c9c278841ceeb0f8cd492}{\index{Math\-Matrix@{Math\-Matrix}!inverse@{inverse}}
+\index{inverse@{inverse}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a6cd7edf3565c9c278841ceeb0f8cd492}
+
+
+Method to compute the inverse matrix Computes the inverse of the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a55143b6ee71b6d2a568ffeb99c4f0d9b}{\index{Math\-Matrix@{Math\-Matrix}!one\-\_\-norm@{one\-\_\-norm}}
+\index{one\-\_\-norm@{one\-\_\-norm}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{one\-\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}double Math\-Matrix\-::one\-\_\-norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a55143b6ee71b6d2a568ffeb99c4f0d9b}
+
+
+Method to calculate L1 Norm Calculate and return the l1 norm of the matrix the method is called on. 
+
+\begin{DoxyReturn}{Returns}
+double -\/ l1 norm 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a6bdb0416ce373dd534b83c2c26bb4480}{\index{Math\-Matrix@{Math\-Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Matrix} Math\-Matrix\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Math\-Matrix} \&}]{a}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a6bdb0416ce373dd534b83c2c26bb4480}
+
+
+Overloaded operator for \hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_matrix}{Math\-Matrix} multiplication Overloaded operator for multiplying the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on by the one passed as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ \hyperlink{class_math_matrix}{Math\-Matrix} Reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_a718529b1f5441bbc7282212d6a2cdb5e}{\index{Math\-Matrix@{Math\-Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Math\-Vector} Math\-Matrix\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Math\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a718529b1f5441bbc7282212d6a2cdb5e}
+
+
+Overloaded operator for \hyperlink{class_math_matrix}{Math\-Matrix} \hyperlink{class_math_vector}{Math\-Vector} Multiplication Overloaded operator for multiplying the \hyperlink{class_math_matrix}{Math\-Matrix} object the method was called on by the \hyperlink{class_math_vector}{Math\-Vector} object passed as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ \hyperlink{class_math_vector}{Math\-Vector} Reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_math_matrix}{Math\-Matrix} 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_aa013e49a4df486235470800a07e2674d}{\index{Math\-Matrix@{Math\-Matrix}!reorder@{reorder}}
+\index{reorder@{reorder}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{reorder}]{\setlength{\rightskip}{0pt plus 5cm}void Math\-Matrix\-::reorder (
+\begin{DoxyParamCaption}
+\item[{const {\bf Math\-Matrix} \&}]{a, }
+\item[{int}]{n, }
+\item[{{\bf Math\-Matrix} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_matrix_aa013e49a4df486235470800a07e2674d}
+
+
+Method to compute the Permutation \hyperlink{class_matrix}{Matrix} Produces the Permutation \hyperlink{class_math_matrix}{Math\-Matrix} object P using the \hyperlink{class_math_matrix}{Math\-Matrix} object A passed as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ \hyperlink{class_math_matrix}{Math\-Matrix} -\/ Reference to initial matrix \\
+\hline
+{\em n} & -\/ Int -\/ \hyperlink{class_matrix}{Matrix} size \\
+\hline
+{\em p} & -\/ \hyperlink{class_math_matrix}{Math\-Matrix} Reference \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_math_matrix_a28bcb4dd7a3a90f9c5111b2c826b2266}{\index{Math\-Matrix@{Math\-Matrix}!two\-\_\-norm@{two\-\_\-norm}}
+\index{two\-\_\-norm@{two\-\_\-norm}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{two\-\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}double Math\-Matrix\-::two\-\_\-norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_a28bcb4dd7a3a90f9c5111b2c826b2266}
+
+
+Method to Calculate L2 Norm Calculate and return the l2 norm of the matrix the method is called on. 
+
+\begin{DoxyReturn}{Returns}
+double -\/ L2 norm 
+\end{DoxyReturn}
+\hypertarget{class_math_matrix_acc7fa38ce97cd0f96587566d283532d7}{\index{Math\-Matrix@{Math\-Matrix}!uniform\-\_\-norm@{uniform\-\_\-norm}}
+\index{uniform\-\_\-norm@{uniform\-\_\-norm}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{uniform\-\_\-norm}]{\setlength{\rightskip}{0pt plus 5cm}double Math\-Matrix\-::uniform\-\_\-norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_math_matrix_acc7fa38ce97cd0f96587566d283532d7}
+
+
+Method to Calculate L2 Norm Calculate and return the uniform norm of the matrix the method is called on. 
+
+\begin{DoxyReturn}{Returns}
+double -\/ Uniform Norm 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_math_matrix_a29e581a152659ab342ef9ce29f50905e}{\index{Math\-Matrix@{Math\-Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!MathMatrix@{Math\-Matrix}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{is, }
+\item[{{\bf Math\-Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_math_matrix_a29e581a152659ab342ef9ce29f50905e}
+
+
+Overloaded operator for Keyboard Input Overloaded operator for inputting a \hyperlink{class_matrix}{Matrix} from keyboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & -\/ Input Stream \\
+\hline
+{\em m} & -\/ \hyperlink{class_math_matrix}{Math\-Matrix} -\/ Reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input Stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_math_matrix_8h}{Math\-Matrix.\-h}\item 
+Math\-Matrix.\-cpp\end{DoxyCompactItemize}
